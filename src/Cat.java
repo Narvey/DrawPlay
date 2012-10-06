@@ -78,15 +78,6 @@ public class Cat {
                 g2.drawLine(x, y, x2, y2);
                 y2 += WHISKER_SLANT; 			
         }
-        /////////////////////// MOUSE//////////////
-        int mX = (int)(catX+HEAD_DIMENSION/2); //put the mouse centered below the cat.
-        int mY = catY+HEAD_DIMENSION+40;
-        g2.setColor(Color.gray);
-        g2.fillOval(mX-MOUSE_WIDTH/2, mY-MOUSE_HEIGHT/2, MOUSE_WIDTH, MOUSE_HEIGHT);
-        g2.drawLine(mX+MOUSE_WIDTH/2, mY, mX+60, mY);
-        g2.setColor(Color.pink);
-        g2.fillOval(mX-MOUSE_WIDTH/2-2, mY-2, 4, 4);
-        
     }
 }
 
