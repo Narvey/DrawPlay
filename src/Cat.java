@@ -83,7 +83,7 @@ public class Cat {
 		// Draw left side of left ear
 		x = catX + HEAD_DIMENSION/5;
 		x2 = x + EAR_SIZE/2;
-		y = catY + HEAD_DIMENSION/5;
+		y = catY + 10;
 		y2 = y - EAR_SIZE;
 		g2.drawLine(x, y, x2, y2);
 		// Draw right side of right ear
