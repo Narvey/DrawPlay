@@ -24,6 +24,9 @@ public class Cat {
     // mouth starts about 40% from left edge of head
     private static final int MOUTH_X = HEAD_DIMENSION/5 * 2;
     private static final int MOUTH_Y = HEAD_DIMENSION/5 * 3;
+    // mouse sizes
+    private static final int MOUSE_WIDTH = 30;
+    private static final int MOUSE_HEIGHT = 10;
     
     // draw will render the Cat on the Graphics object
     public void draw(Graphics g, int catX, int catY)
@@ -75,6 +78,12 @@ public class Cat {
                 g2.drawLine(x, y, x2, y2);
                 y2 += WHISKER_SLANT; 			
         }
+        /////////////////////// MOUSE//////////////
+        int mX = (int)(catX+HEAD_DIMENSION/2); //put the mouse centered below the cat.
+        int mY = catY+HEAD_DIMENSION+40;
+        g2.setColor(Color.getColor("#333344"));
+        g2.drawOval(arg0, arg1, arg2, arg3)
+        
     }
 }
 
